@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mời bạn đến chơi nhà</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .invite-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mời bạn đến chơi nhà!</h1>
+    <p>Chào bạn,</p>
+    <p>Chúng tôi rất vui mừng mời bạn đến chơi nhà vào ngày ... lúc ...</p>
+    <p>Địa chỉ: ...</p>
+    <button class="invite-button" onclick="sendInvite()">Gửi lời mời</button>
+    <script>
+        function sendInvite() {
+            window.location.href = "mailto:email@example.com?subject=Lời mời đến chơi nhà&body=Chào bạn, chúng tôi mời bạn đến chơi nhà vào ngày ... lúc ... tại địa chỉ ...";
+        }
+    </script>
+</body>
+</html>
