@@ -6,31 +6,52 @@
     <title>Mời bạn đến chơi nhà</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             text-align: center;
-            margin: 50px;
+            background-color: #ffe6e6;
+            color: #800000;
+            padding: 50px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: inline-block;
+            max-width: 600px;
         }
         .invite-button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
+            padding: 15px 30px;
+            background-color: #ff6666;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .invite-button:hover {
+            background-color: #ff3333;
+        }
+        .heart {
+            font-size: 48px;
+            color: #ff6666;
         }
     </style>
 </head>
 <body>
-    <h1>Mời bạn đến chơi nhà!</h1>
-    <p>Chào bạn,</p>
-    <p>Chúng tôi rất vui mừng mời bạn đến chơi nhà vào ngày ... lúc ...</p>
-    <p>Địa chỉ: ...</p>
-    <button class="invite-button" onclick="sendInvite()">Gửi lời mời</button>
-    <script>
-        function sendInvite() {
-            window.location.href = "mailto:email@example.com?subject=Lời mời đến chơi nhà&body=Chào bạn, chúng tôi mời bạn đến chơi nhà vào ngày ... lúc ... tại địa chỉ ...";
-        }
-    </script>
+  <div class="container">
+      <h1>Mời em yêu đến chơi nhà!</h1>
+      <p class="heart">❤</p>
+      <p>Chào em yêu,</p>
+      <p>Anh rất vui mừng mời em đến chơi nhà vào ngày ... lúc ...</p>
+      <p>Địa chỉ: ...</p>
+      <button class="invite-button" onclick="sendInvite()">Gửi lời mời</button>
+  </div>
+  <script>
+      function sendInvite() {
+          window.location.href = "mailto:email@example.com?subject=Lời mời đến chơi nhà&body=Chào em yêu, anh mời em đến chơi nhà vào ngày ... lúc ... tại địa chỉ ...";
+      }
+  </script>
 </body>
 </html>
